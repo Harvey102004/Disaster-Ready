@@ -31,7 +31,7 @@ const NavDesktop = () => {
   }, [pathname]);
 
   return (
-    <div className=" items-center justify-around h-28 hidden md:flex">
+    <div className="mx-auto hidden h-28 max-w-[1500px] items-center justify-around md:flex">
       <Link href={"/"}>
         <Image
           src={"/logo.png"}
@@ -56,7 +56,7 @@ const NavDesktop = () => {
                 }}
                 className={`${
                   isActive ? "text-primary" : ""
-                } text-xs lg:text-sm 3xl:text-lg`}
+                } 3xl:text-lg text-xs lg:text-sm`}
                 key={link.name}
                 href={link.href}
               >
@@ -67,7 +67,7 @@ const NavDesktop = () => {
 
           {isPathInNav && (
             <div
-              className="absolute bottom-[-10px] h-1 bg-primary rounded-t-full transition-all duration-500 ease-in-out"
+              className="bg-primary absolute bottom-[-10px] h-1 rounded-t-full transition-all duration-500 ease-in-out"
               style={{
                 left: activeStyle.left,
                 width: activeStyle.width,
@@ -81,9 +81,9 @@ const NavDesktop = () => {
         href="/report"
         className={`${
           pathname.startsWith("/report")
-            ? "bg-transparent text-primary border-1 border-primary"
+            ? "text-primary border-primary border-1 bg-transparent"
             : "bg-primary text-light"
-        }cursor-pointer bg-primary  py-2 lg:py-3 px-6 lg:px-8 rounded-full text-light text-[10px] lg:text-xs 3xl:text-lg border-1 border-primary hover:bg-transparent hover:text-primary transition-all duration-500 ease-in-out`}
+        }cursor-pointer bg-primary text-light 3xl:text-lg border-primary hover:text-primary rounded-full border-1 px-6 py-2 text-[10px] transition-all duration-500 ease-in-out hover:bg-transparent lg:px-8 lg:py-3 lg:text-xs`}
       >
         Report
       </Link>

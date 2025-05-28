@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function SidebarMobile() {
   const [showSideBar, setShowSideBar] = useState(false);
@@ -48,11 +48,22 @@ export default function SidebarMobile() {
     },
   ];
 
+  useEffect(() => {
+    if (showSideBar) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [showSideBar]);
+
   return (
     <>
       {/* HEADER SA MOBILE*/}
-      <div className="md:hidden">
-        <div className="flex items-center justify-between px-5 ">
+      <div className="z-50 md:hidden">
+        <div className="flex items-center justify-between px-5">
           <Image
             src={"/menu.png"}
             width={18}
@@ -65,17 +76,15 @@ export default function SidebarMobile() {
       </div>
 
       {showSideBar && (
-        <div className="fixed inset-0 bg-labo z-40" onClick={handleSideBar} />
+        <div className="bg-labo fixed inset-0 z-40" onClick={handleSideBar} />
       )}
 
       {/* SIDEBAR NAV */}
       <div
-        className={`fixed top-0 left-0 h-full w-[85%] bg-dark py-8 z-50 transition-transform duration-300 ease-in-out
-          ${showSideBar ? "translate-x-0" : "-translate-x-full"}
-        `}
+        className={`bg-dark fixed top-0 left-0 z-50 h-full w-[85%] py-8 transition-transform duration-300 ease-in-out ${showSideBar ? "translate-x-0" : "-translate-x-full"} `}
       >
-        <div className="absolute h-[100px] w-[200px] blur-3xl bg-primary rounded-t-full bottom-0 left-1/2 -translate-x-1/2"></div>
-        <div className="flex items-center justify-between gap-4 border-b-[0.5px] border-light w-full px-5 pb-4 z-50">
+        <div className="bg-primary absolute bottom-0 left-1/2 z-50 h-[100px] w-[200px] -translate-x-1/2 rounded-t-full blur-3xl"></div>
+        <div className="border-light z-50 flex w-full items-center justify-between gap-4 border-b-[0.5px] px-8 pb-4">
           <div className="flex items-center gap-5">
             <Image
               src={"/close.png"}
@@ -96,7 +105,7 @@ export default function SidebarMobile() {
           ></Image>
         </div>
         <nav>
-          <ul className="flex flex-col gap-2 mt-5 ">
+          <ul className="mt-5 flex flex-col gap-3">
             {navLinks.map((link) => {
               const isActive =
                 pathname === link.href ||
@@ -105,7 +114,7 @@ export default function SidebarMobile() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`flex items-center gap-5 py-3 px-5 text-light text-xs ${
+                  className={`text-light flex items-center gap-5 px-8 py-3 text-xs ${
                     isActive ? "bg-primary" : ""
                   }`}
                   onClick={handleSideBar}

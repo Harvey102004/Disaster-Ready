@@ -1,0 +1,144 @@
+{
+  "barangay_contact": [
+    {
+      "id": 1,
+      "brgy_name": "Anos",
+      "phone": "09104552659",
+      "landline": "0491234567",
+      "email": "barangaybagongsilang4@gmail.com",
+      "fb_page": "https://www.facebook.com/barangayanosofficial",
+      "captain": "Rogelio N. Delos Reyes",
+      "secretary": "Myla S. Catbagan"
+    },
+    {
+      "id": 2,
+      "brgy_name": "Batong Malake",
+      "phone": "09100000001",
+      "landline": "0491111111",
+      "email": "batongmalake@gmail.com",
+      "fb_page": "https://www.facebook.com/barangaybatongmalake",
+      "captain": "Juan Dela Cruz",
+      "secretary": "Maria Santos"
+    },
+    {
+      "id": 3,
+      "brgy_name": "Bayog",
+      "phone": "09100000002",
+      "landline": "0492222222",
+      "email": "bayog@gmail.com",
+      "fb_page": "https://www.facebook.com/barangaybayog",
+      "captain": "Pedro Reyes",
+      "secretary": "Ana Cruz"
+    },
+    {
+      "id": 4,
+      "brgy_name": "Bambang",
+      "phone": "09100000003",
+      "landline": "0493333333",
+      "email": "bambang@gmail.com",
+      "fb_page": "https://www.facebook.com/barangaybambang",
+      "captain": "Carlos Mendoza",
+      "secretary": "Liza Gonzales"
+    },
+    {
+      "id": 5,
+      "brgy_name": "Baybayin",
+      "phone": "09100000004",
+      "landline": "0494444444",
+      "email": "baybayin@gmail.com",
+      "fb_page": "https://www.facebook.com/barangaybaybayin",
+      "captain": "Nestor Ramos",
+      "secretary": "Carla Tan"
+    },
+    {
+      "id": 6,
+      "brgy_name": "Bagong Silang",
+      "phone": "09100000005",
+      "landline": "0495555555",
+      "email": "bagongsilang@gmail.com",
+      "fb_page": "https://www.facebook.com/barangaybagongsilang",
+      "captain": "Jose Garcia",
+      "secretary": "Emily Navarro"
+    },
+    {
+      "id": 7,
+      "brgy_name": "Lalakay",
+      "phone": "09100000006",
+      "landline": "0496666666",
+      "email": "lalakay@gmail.com",
+      "fb_page": "https://www.facebook.com/barangaylalakay",
+      "captain": "Ricardo Villanueva",
+      "secretary": "Fely Cruz"
+    },
+    {
+      "id": 8,
+      "brgy_name": "Maahas",
+      "phone": "09100000007",
+      "landline": "0497777777",
+      "email": "maahas@gmail.com",
+      "fb_page": "https://www.facebook.com/barangaymaahas",
+      "captain": "Luis Fernandez",
+      "secretary": "Jona Rivera"
+    },
+    {
+      "id": 9,
+      "brgy_name": "Malinta",
+      "phone": "09100000008",
+      "landline": "0498888888",
+      "email": "malinta@gmail.com",
+      "fb_page": "https://www.facebook.com/barangaymalinta",
+      "captain": "Andres Moreno",
+      "secretary": "Cynthia Uy"
+    },
+    {
+      "id": 10,
+      "brgy_name": "Mayondon",
+      "phone": "09100000009",
+      "landline": "0499999999",
+      "email": "mayondon@gmail.com",
+      "fb_page": "https://www.facebook.com/barangaymayondon",
+      "captain": "Manuel Cruz",
+      "secretary": "Denise Roxas"
+    },
+    {
+      "id": 11,
+      "brgy_name": "Timugan",
+      "phone": "09100000010",
+      "landline": "0491212121",
+      "email": "timugan@gmail.com",
+      "fb_page": "https://www.facebook.com/barangaytimugan",
+      "captain": "Oscar De Leon",
+      "secretary": "Grace Lim"
+    },
+    {
+      "id": 12,
+      "brgy_name": "Tuntungin Putho",
+      "phone": "09100000011",
+      "landline": "0491313131",
+      "email": "tuntunginputho@gmail.com",
+      "fb_page": "https://www.facebook.com/barangaytuntunginputho",
+      "captain": "Arnold Santiago",
+      "secretary": "Sarah Lopez"
+    },
+    {
+      "id": 13,
+      "brgy_name": "Tadlac",
+      "phone": "09100000012",
+      "landline": "0491414141",
+      "email": "tadlac@gmail.com",
+      "fb_page": "https://www.facebook.com/barangaytadlac",
+      "captain": "Bobby Castillo",
+      "secretary": "Irene Salazar"
+    },
+    {
+      "id": 14,
+      "brgy_name": "San Antonio",
+      "phone": "09100000013",
+      "landline": "0491515151",
+      "email": "sanantonio@gmail.com",
+      "fb_page": "https://www.facebook.com/barangaysanantonio",
+      "captain": "Gabriel Ramos",
+      "secretary": "Melanie Bautista"
+    }
+  ]
+}

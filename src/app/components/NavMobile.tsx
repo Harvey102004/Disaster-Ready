@@ -26,24 +26,24 @@ export default function NavMobile() {
     const index = navLinks.findIndex(
       (link) =>
         pathname === link.href ||
-        (pathname.startsWith(link.href) && link.href !== "/")
+        (pathname.startsWith(link.href) && link.href !== "/"),
     );
     setActiveIndex(index);
   }, [pathname]);
 
   return (
-    <div className="absolute block md:hidden bottom-2 w-full z-30">
-      <nav className="w-[95%] rounded-xl bg-primary h-14 mx-auto  flex items-center relative">
+    <div className="bg-light fixed bottom-0 z-30 block w-full pt-4 md:hidden">
+      <nav className="bg-primary relative mx-auto flex h-14 w-[95%] items-center rounded-xl">
         {activeIndex !== null && activeIndex !== -1 && (
           <div
-            className="absolute -top-3 h-[55px] w-[55px] bg-light rounded-full transition-all duration-300 ease-in-out flex items-center justify-center"
+            className="bg-light absolute -top-3 flex h-[55px] w-[55px] items-center justify-center rounded-full transition-all duration-300 ease-in-out"
             style={{
               left: `calc(${(100 / navLinks.length) * activeIndex}% + ${
                 100 / navLinks.length / 2
               }% - 27.5px)`,
             }}
           >
-            <div className="h-[45px] w-[45px] bg-primary rounded-full flex items-center justify-center">
+            <div className="bg-primary flex h-[45px] w-[45px] items-center justify-center rounded-full">
               <Image
                 src={navLinks[activeIndex].icon}
                 width={20}
@@ -54,7 +54,7 @@ export default function NavMobile() {
           </div>
         )}
 
-        <ul className="flex items-center justify-between w-full z-10">
+        <ul className="z-10 flex w-full items-center justify-between">
           {navLinks.map((link, index) => {
             const isActive =
               pathname === link.href ||
@@ -64,7 +64,7 @@ export default function NavMobile() {
               <Link
                 href={link.href}
                 key={link.label}
-                className="relative flex justify-center items-center w-1/5 h-full"
+                className="relative flex h-full w-1/5 items-center justify-center"
               >
                 {!isActive && (
                   <Image
